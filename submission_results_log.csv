@@ -1,0 +1,6 @@
+Timestamp,Submission_File,Model,Imputation_Strategy,CV_F1_Score,Notes
+2025-12-18 09:36:45,submission_best.csv,XGBoost,Median (Num) + Missing (Cat),N/A,Best strategy from bake-off
+2025-12-18 10:12:45,submission_best.csv,XGBoost,Median (Num) + Missing (Cat),N/A,Best strategy from bake-off
+2025-12-18 10:36:10,submission_best.csv,XGBoost,Median (Num) + Missing (Cat),N/A,Best strategy from bake-off
+2025-12-18 10:42:07,submission_best.csv,XGBoost,Median (Num) + Missing (Cat),N/A,Best strategy from bake-off
+2025-12-18 10:56:12,submission_best.csv,XGBoost,Median (Num) + Missing (Cat),N/A,Best strategy from bake-off

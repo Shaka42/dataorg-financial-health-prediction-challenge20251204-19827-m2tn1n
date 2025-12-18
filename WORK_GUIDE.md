@@ -116,8 +116,8 @@ Current workspace notebook now includes:
    - [ ] Consider dropping features with extremely high missingness if they add noise
 
 3. **Financial Feature Stabilization**
-   - [ ] Log-transform heavy-tailed financial columns: `log1p(personal_income)`, `log1p(business_turnover)`, `log1p(business_expenses)`
-   - [ ] Add ratio features (handle divide-by-zero safely):
+   - [x] Log-transform heavy-tailed financial columns: `log1p(personal_income)`, `log1p(business_turnover)`, `log1p(business_expenses)`
+   - [x] Add ratio features (handle divide-by-zero safely):
      - expenses/turnover, turnover/income, turnover per business age
    - [ ] Country-normalize key money features (z-score or rank within country)
 
@@ -338,8 +338,8 @@ Phase 6 (Optimization):       → Ensembles + CV stabilization
 - [x] Check data types and dimensions
 - [x] Profile missing values
 - [ ] Standardize categorical values (next)
-- [ ] Handle outliers with transforms (next)
-- [ ] Create derived features (next)
+- [x] Handle outliers with transforms (next)
+- [x] Create derived features (next)
 
 ### Modeling Setup
 - [x] Define evaluation metrics (macro-F1, balanced accuracy)
@@ -352,7 +352,7 @@ Phase 6 (Optimization):       → Ensembles + CV stabilization
 - [ ] Test feature combinations (planned)
 - [x] Tune hyperparameters (next)
 - [ ] Compare encoding strategies (next)
-- [ ] Ensemble top performers (later)
+- [x] Ensemble top performers (later)
 
 ### Final Steps
 - [x] Generate test predictions (baseline)
@@ -393,11 +393,11 @@ Phase 6 (Optimization):       → Ensembles + CV stabilization
 
 1. **Normalize categorical values** (fix `don’t know` variants and encoding issues), then retrain.
 2. **Replace “most_frequent” with explicit “Missing” category for categoricals** and compare macro-F1.
-3. **Log + ratio + country-normalized money features**, then retrain.
-4. **StratifiedKFold CV** for robust model selection (macro-F1 mean ± std).
-5. **RandomizedSearchCV on XGBoost** (depth, min_child_weight, subsample, colsample, reg_lambda, learning_rate, n_estimators with early stopping).
+3. **Log + ratio + country-normalized money features**, then retrain. (Partially done: Log + Ratio)
+4. **StratifiedKFold CV** for robust model selection (macro-F1 mean ± std). (Done)
+5. **RandomizedSearchCV on XGBoost** (depth, min_child_weight, subsample, colsample, reg_lambda, learning_rate, n_estimators with early stopping). (Done)
 6. **Try ordinal encoding** for ordered status columns to reduce one-hot explosion.
-7. **Probability blending**: weighted average of XGBoost + LightGBM probabilities.
+7. **Probability blending**: weighted average of XGBoost + LightGBM probabilities. (Done)
 8. **(Optional) CatBoost** by switching to Python 3.11/3.12 environment.
 
 **Goal**: Improve macro-F1 (and especially `High` recall) while keeping CV stable.

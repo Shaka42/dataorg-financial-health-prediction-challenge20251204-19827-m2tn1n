@@ -5,3 +5,4 @@ Timestamp,Submission_File,Model,Imputation_Strategy,CV_F1_Score,Notes
 2025-12-18 10:42:07,submission_best.csv,XGBoost,Median (Num) + Missing (Cat),N/A,Best strategy from bake-off
 2025-12-18 10:56:12,submission_best.csv,XGBoost,Median (Num) + Missing (Cat),N/A,Best strategy from bake-off
 2025-12-18 13:30:04,submission_best.csv,XGBoost,Median (Num) + Missing (Cat),N/A,Best strategy from bake-off
+2025-12-18 15:49:56,submission_best.csv,Ensemble,median+Missing,0.8144,Best model selected: Ensemble

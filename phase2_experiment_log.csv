@@ -1,0 +1,26 @@
+Timestamp,Submission_File,Model,Feature_Set,N_Features,CV_F1_Mean,CV_F1_Std,Rank
+2025-12-19 16:00:25,submission_phase2_best.csv,LightGBM,all_features,92,0.8020,0.0149,1
+2025-12-19 16:00:25,submission_phase2_best.csv,LightGBM,numeric_ordinal,57,0.8017,0.0162,2
+2025-12-19 16:00:25,submission_phase2_best.csv,LightGBM,all_numeric,57,0.8017,0.0162,3
+2025-12-19 16:00:25,submission_phase2_best.csv,LightGBM,baseline,37,0.8014,0.0094,4
+2025-12-19 16:00:25,submission_phase2_xgboost.csv,XGBoost,baseline,37,0.8004,0.0112,5
+2025-12-19 16:00:25,submission_phase2_xgboost.csv,XGBoost,engineered,63,0.7993,0.0120,6
+2025-12-19 16:00:25,submission_phase2_xgboost.csv,XGBoost,all_features,92,0.7992,0.0142,7
+2025-12-19 16:00:25,submission_phase2_gradientboosting.csv,GradientBoosting,all_features,92,0.7989,0.0150,8
+2025-12-19 16:00:25,submission_phase2_xgboost.csv,XGBoost,numeric_ordinal,57,0.7984,0.0129,9
+2025-12-19 16:00:25,submission_phase2_xgboost.csv,XGBoost,all_numeric,57,0.7984,0.0129,10
+2025-12-19 16:00:25,submission_phase2_best.csv,LightGBM,engineered,63,0.7982,0.0128,11
+2025-12-19 16:00:25,submission_phase2_gradientboosting.csv,GradientBoosting,baseline,37,0.7949,0.0155,12
+2025-12-19 16:00:25,submission_phase2_gradientboosting.csv,GradientBoosting,engineered,63,0.7924,0.0143,13
+2025-12-19 16:00:25,submission_phase2_gradientboosting.csv,GradientBoosting,all_numeric,57,0.7907,0.0164,14
+2025-12-19 16:00:25,submission_phase2_gradientboosting.csv,GradientBoosting,numeric_ordinal,57,0.7907,0.0164,15
+2025-12-19 16:00:25,submission_phase2_randomforest.csv,RandomForest,all_features,92,0.7743,0.0150,16
+2025-12-19 16:00:25,submission_phase2_randomforest.csv,RandomForest,baseline,37,0.7719,0.0228,17
+2025-12-19 16:00:25,submission_phase2_randomforest.csv,RandomForest,engineered,63,0.7555,0.0150,18
+2025-12-19 16:00:25,submission_phase2_randomforest.csv,RandomForest,numeric_ordinal,57,0.7455,0.0145,19
+2025-12-19 16:00:25,submission_phase2_randomforest.csv,RandomForest,all_numeric,57,0.7455,0.0145,20
+2025-12-19 16:00:25,submission_phase2_logisticregression.csv,LogisticRegression,engineered,63,0.7379,0.0157,21
+2025-12-19 16:00:25,submission_phase2_logisticregression.csv,LogisticRegression,all_features,92,0.7360,0.0172,22
+2025-12-19 16:00:25,submission_phase2_logisticregression.csv,LogisticRegression,baseline,37,0.7333,0.0168,23
+2025-12-19 16:00:25,submission_phase2_logisticregression.csv,LogisticRegression,all_numeric,57,0.7092,0.0122,24
+2025-12-19 16:00:25,submission_phase2_logisticregression.csv,LogisticRegression,numeric_ordinal,57,0.7092,0.0122,25

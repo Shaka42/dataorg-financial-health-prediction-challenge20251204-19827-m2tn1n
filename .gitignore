@@ -1,0 +1,36 @@
+# Python virtual environments
+.venv/
+.venv_ml/
+venv/
+ENV/
+
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# ML training artifacts / logs
+catboost_info/
+*.tfevents
+*.log
+*.tmp
+
+# Data wrangler / misc
+*.bak
+*.swp
